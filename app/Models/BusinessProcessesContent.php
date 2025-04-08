@@ -1,0 +1,33 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property int $id
+ * @property int $business_processes_id
+ * @property int $language_id
+ * @property string|null $header
+ * @property string|null $title
+ * @property string|null $description
+ */
+class BusinessProcessesContent extends Model
+{
+    use HasFactory;
+
+
+    /**
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'business_processes_id',
+        'language_id',
+        'header',
+        'title',
+        'description',
+    ];
+}

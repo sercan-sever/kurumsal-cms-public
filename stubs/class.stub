@@ -1,0 +1,16 @@
+<?php
+
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+class {{ class }}
+{
+    /**
+     * @return void
+     */
+    public function __construct()
+    {
+        //
+    }
+}

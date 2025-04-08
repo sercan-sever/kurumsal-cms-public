@@ -1,0 +1,521 @@
+/* Scrollbar için genel stiller */
+::-webkit-scrollbar {
+    width: 8px;
+    /* Kaydırma çubuğu genişliği */
+    height: 8px;
+    /* Alt kaydırma çubuğu yüksekliği */
+}
+
+/* Scrollbar Track (arka plan) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Açık renkli bir arka plan */
+    border-radius: 4px;
+    /* Kenarları yuvarlat */
+}
+
+/* Scrollbar Thumb (kaydırma kısmı) */
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    /* İnce, hoş bir gri */
+    border-radius: 4px;
+    /* Kenarları yuvarlat */
+    transition: background 0.3s ease;
+    /* Hover efekti için geçiş */
+}
+
+/* Scrollbar Thumb hover (üzerine gelindiğinde) */
+::-webkit-scrollbar-thumb:hover {
+    background: #a1a1a1;
+    /* Daha koyu bir gri */
+}
+
+/* Firefox için Scrollbar Stilleri */
+* {
+    scrollbar-width: thin;
+    /* İnce bir kaydırma çubuğu */
+    scrollbar-color: #c1c1c1 #f1f1f1;
+    /* Renk: kaydırma kısmı ve arka plan */
+}
+
+:root {
+    --kt-scrollbar-width: 8px;
+    /* Default genişlik */
+    --kt-scrollbar-height: 8px;
+    /* Default yükseklik */
+}
+
+/* Örneğin, koyu tema için farklı değerler: */
+[data-theme="dark"] {
+    --kt-scrollbar-width: 8px;
+    --kt-scrollbar-height: 8px;
+}
+
+.toastify::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: progressBar 3s linear forwards;
+}
+
+
+.toastify {
+    max-width: max-content !important;
+}
+
+@keyframes progressBar {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0%;
+    }
+}
+
+
+
+#waitModel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+    box-shadow: 0 0.75rem 1.5rem rgba(73, 80, 87, 0.3);
+    background-color: rgba(73, 80, 87, 0.8);
+}
+
+#waitModel .modal-content {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: calc(100% - 1.75rem * 2);
+    position: relative;
+    width: auto;
+    margin: 1.75rem;
+    pointer-events: none;
+    background-color: transparent;
+}
+
+#waitModel .modal-content .content {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    outline: 0;
+}
+
+/* DELETE */
+
+#delete-language-modal .modal-header {
+    border-bottom: none !important;
+}
+
+#delete-language-modal .modal-footer {
+    border-top: none !important;
+}
+
+#delete-translation-modal .modal-header {
+    border-bottom: none !important;
+}
+
+#delete-translation-modal .modal-footer {
+    border-top: none !important;
+}
+
+#delete-user-management-modal .modal-header {
+    border-bottom: none !important;
+}
+
+#delete-user-management-modal .modal-footer {
+    border-top: none !important;
+}
+
+#trashed-restore-user-management-modal .modal-header {
+    border-bottom: none !important;
+}
+
+#trashed-restore-user-management-modal .modal-footer {
+    border-top: none !important;
+}
+
+#ban-user-management-modal .modal-header {
+    border-bottom: none !important;
+}
+
+#ban-user-management-modal .modal-footer {
+    border-top: none !important;
+}
+
+#banned-restore-user-management-modal .modal-header {
+    border-bottom: none !important;
+}
+
+#banned-restore-user-management-modal .modal-footer {
+    border-top: none !important;
+}
+
+
+
+#trashed-restore-language-modal .modal-header {
+    border-bottom: none !important;
+}
+
+#trashed-restore-language-modal .modal-footer {
+    border-top: none !important;
+}
+
+
+.modal-backdrop {
+    backdrop-filter: blur(5px);
+    /* Arka planı bulanıklaştırır */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Yarı şeffaf bir siyah renk verir */
+}
+
+.modal-backdrop.show {
+    opacity: 0.6;
+}
+
+.fw-900 {
+    font-weight: 900 !important;
+}
+
+.min-w50 {
+    min-width: 50px !important;
+}
+
+.min-w100 {
+    min-width: 100px !important;
+}
+
+.min-w125 {
+    min-width: 125px !important;
+}
+
+.min-w150 {
+    min-width: 150px !important;
+}
+
+.min-w200 {
+    min-width: 200px !important;
+}
+
+.min-w250 {
+    min-width: 250px !important;
+}
+
+.mw-1100px {
+    min-width: 1100px;
+}
+
+
+.cst-remember:hover,
+.cst-remember input:hover {
+    cursor: pointer;
+}
+
+.select2-container--bootstrap5 .select2-selection__clear {
+    background-image: unset !important;
+    mask-image: unset !important;
+    background-color: transparent !important;
+}
+
+.select2-container .select2-selection--single .select2-selection__clear {
+    position: absolute;
+    float: right;
+    display: block;
+    top: .9em;
+    right: 4.5em;
+}
+
+.select2-container--bootstrap5 .select2-selection__clear:hover {
+    background-color: unset !important;
+}
+
+.select2-selection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select2-selection__clear {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.custom-clear-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.custom-clear-button img {
+    width: 15px;
+    height: 15px;
+}
+
+
+.form-check-custom.form-check-solid.cst-status .form-check-input {
+    background-color: #f1416c;
+    cursor: pointer;
+}
+
+.form-check-custom.form-check-solid.cst-status .form-check-input:checked {
+    background-color: #17C653;
+    cursor: pointer;
+}
+
+
+
+
+.cst-default.form-check-input {
+    width: 30px;
+    height: 30px;
+    border-radius: 50% !important;
+    border: 2px solid #50cd89;
+    background-color: #50cd89;
+    appearance: none;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.cst-default.form-check-input:not(:checked) {
+    border-color: #f1416c !important;
+    background-color: #f1416c !important;
+}
+
+.cst-default.form-check-input:not(:checked)+i.fa-xmark {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    z-index: 9 !important;
+}
+
+.form-check .fa-xmark {
+    display: block;
+    position: absolute;
+    font-size: 20px;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    pointer-events: none;
+}
+
+
+.cst-default.form-check-input:checked+.fa-xmark {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0 !important;
+}
+
+
+
+
+
+.form-check-custom.form-check-success .form-check-input:checked {
+    background-color: #17C653;
+}
+
+.badge-success {
+    background-color: #17C653;
+}
+
+.form-check-custom,
+.form-check-custom.form-check-solid .form-check-input {
+    cursor: pointer;
+}
+
+
+#permission-user-management-modal .table td:first-child {
+    min-width: 145px;
+}
+
+#add-user-management-modal .table.cst-permission td:first-child {
+    min-width: 145px;
+}
+
+.cst-remove-btn {
+    display: block !important;
+    top: -10% !important;
+    right: -10% !important;
+    position: absolute;
+}
+
+.sortable-ghost {
+    opacity: 0.5;
+    background: #ffefef;
+    border: 2px dashed #7239EA;
+}
+
+.cst-sortable {
+    cursor: move;
+}
+
+
+.hover-scale {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+
+.bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+    color: var(--kt-input-solid-color);
+}
+
+.bootstrap-select .dropdown-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bootstrap-select .dropdown-menu.inner {
+    max-height: 200px;
+}
+
+
+
+@media (min-width: 992px) {
+
+    main::-webkit-scrollbar,
+    span::-webkit-scrollbar,
+    ol::-webkit-scrollbar,
+    ul::-webkit-scrollbar,
+    pre::-webkit-scrollbar,
+    div::-webkit-scrollbar {
+        width: var(--kt-scrollbar-width);
+        height: var(--kt-scrollbar-height);
+    }
+
+    /* Scrollbar Track */
+    main::-webkit-scrollbar-track,
+    span::-webkit-scrollbar-track,
+    ol::-webkit-scrollbar-track,
+    ul::-webkit-scrollbar-track,
+    pre::-webkit-scrollbar-track,
+    div::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        /* Arka plan */
+    }
+
+    /* Scrollbar Thumb */
+    main::-webkit-scrollbar-thumb,
+    span::-webkit-scrollbar-thumb,
+    ol::-webkit-scrollbar-thumb,
+    ul::-webkit-scrollbar-thumb,
+    pre::-webkit-scrollbar-thumb,
+    div::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+        /* Scrollbar rengi */
+        border-radius: 4px;
+        /* Yuvarlatılmış köşeler */
+    }
+
+    /* Hover Efekti */
+    main::-webkit-scrollbar-thumb:hover,
+    span::-webkit-scrollbar-thumb:hover,
+    ol::-webkit-scrollbar-thumb:hover,
+    ul::-webkit-scrollbar-thumb:hover,
+    pre::-webkit-scrollbar-thumb:hover,
+    div::-webkit-scrollbar-thumb:hover {
+        background: #a1a1a1;
+        /* Hover rengi */
+    }
+}
+
+
+.app-sidebar-footer {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    background-color: #1e1e2d !important;
+    z-index: 10;
+}
+
+#kt_app_sidebar_menu_wrapper {
+    height: 100vh !important;
+}
+
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 150px;
+}
+
+.bootstrap-select .dropdown-toggle.disabled {
+    opacity: 1;
+}
+
+@media screen and (max-width:768px) {
+    .cst-mobil-checkbox .fv-plugins-icon-container {
+        width: auto;
+    }
+
+    .cst-draggable-body .draggable .row {
+        flex-direction: row !important;
+        justify-content: space-between;
+    }
+
+    .cst-draggable-body .draggable .row .col-md-2,
+    .cst-draggable-body .draggable .row .col-md-8 {
+        width: fit-content;
+    }
+}
+
+
+@media screen and (max-width:576px) {
+    .card .cst-table-header .card-toolbar .d-flex {
+        flex-direction: column;
+    }
+
+    .cst-draggable-body .draggable .row {
+        flex-direction: column !important;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cst-draggable-body .draggable .row .col-md-2,
+    .cst-draggable-body .draggable .row .col-md-8 {
+        width: 100%;
+    }
+
+    .cst-draggable-body .draggable .row .col-md-2.d-flex {
+        justify-content: center;
+    }
+
+    .cst-draggable-body .draggable .row .col-md-2.d-flex button {
+        justify-content: center !important;
+    }
+}
