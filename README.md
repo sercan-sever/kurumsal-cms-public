@@ -12,7 +12,7 @@ Amacı, Laravel öğrenen geliştiricilere veya kendi CMS yapısını kurmak ist
 - 📦 Modül tabanlı sayfa içerikleri
 - 🔀 Sürükle-bırak ile sayfa düzenleme
 - 🔐 Rol ve yetki yönetimi
-- 🧾 CRUD bazlı yetkilendirme
+- 🧾 Sayfa bazlı yetkilendirme
 - 🕒 Cron tabanlı queue ve schedule sistemi (Redis gerekmez)
 - ☁️ Paylaşımlı hosting uyumlu
 
