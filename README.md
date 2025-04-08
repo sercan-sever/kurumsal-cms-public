@@ -99,8 +99,8 @@ PHP yolunu öğrenmek için terminalde `which php` komutunu çalıştırabilirsi
 ## 🔐 Admin Girişi (Örnek)
 
 ```txt
-Email: admin@localkod.com
-Şifre: admin123456
+Email: demo@localkod.com
+Şifre: 12345678
 ```
 
 ---
