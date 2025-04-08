@@ -118,4 +118,6 @@ Email: demo@localkod.com
 ## 📬 İletişim
 
 Her türlü geri bildirim veya katkı için LinkedIn üzerinden ulaşabilirsiniz:  
+🔗 [localkod.com](https://localkod.com/tr)
 🔗 [linkedin.com/in/sercan-sever](https://www.linkedin.com/in/sercan-sever/)
+✉️ [sercan.sever35@gmail.com](mailto:sercan.sever35@gmail.com)
