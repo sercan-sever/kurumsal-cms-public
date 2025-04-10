@@ -36,7 +36,7 @@ spatie/laravel-sitemap
 ### 1. Projeyi klonla ve yapılandır:
 
 ```bash
-git clone [https://github.com/sercan-sever/kurumsal-cms-public.git](https://github.com/sercan-sever/kurumsal-cms-public.git)
+git clone https://github.com/sercan-sever/kurumsal-cms-public.git
 cd kurumsal-cms-public
 
 composer install
