@@ -99,7 +99,7 @@ PHP yolunu öğrenmek için terminalde `which php` komutunu çalıştırabilirsi
 ## 🔐 Admin Girişi (Örnek)
 
 🔗 [Demo Site](https://demo.localkod.com/tr)  
-🔗 [Demo Admin Panel](https://demo.localkod.com/lk-admin)
+🔗 [Demo Admin Panel](https://demo.localkod.com/lk-admin/login)
 
 ```txt
 Demo Kullanıcı Mail : demo@localkod.com
