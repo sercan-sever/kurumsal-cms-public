@@ -98,9 +98,11 @@ PHP yolunu öğrenmek için terminalde `which php` komutunu çalıştırabilirsi
 
 ## 🔐 Admin Girişi (Örnek)
 
+🔗 [Demo Site](https://demo.localkod.com/tr)
+🔗 [Demo Admin Panel](https://demo.localkod.com/lk-admin)
 ```txt
-Email: demo@localkod.com
-Şifre: 12345678
+Demo Kullanıcı Mail : demo@localkod.com
+Demo Kullanıcı Şifre : demo123456
 ```
 
 ---
